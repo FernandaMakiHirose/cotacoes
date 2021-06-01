@@ -41,3 +41,40 @@ PASSO 9
 vamos validar os dados, é importante para que o usuário passe os dados corretos, no arquivo 'pom.xml' adicione uma dependência para validação
 no arquivo 'StockDTO' adicione as validações
 no arquivo 'StockController'foi necessário adicionar o @Valid para validar os dados no 'put' e no 'post'
+
+PASSO 10 
+crie o banco de dados e adicione mais 2 dependências no arquivo 'pom.xml'
+
+PASSO 11
+dentro da pasta 'model' sem ser dentro da subpasta 'dto' crie uma java class 'Stock', no movel fica os dados que vamos transacionar com o banco de dados e os dados que vamos receber de uma requisição, ela é uma entidade
+
+PASSO 12 
+é necessário criar o repository, ela é a camada responsável com a interação com o banco de dados, crie uma pasta 'repository', como só temos uma classe só vai ter um repository, dentro dessa pasta crie uma interface 'StockRepository'
+
+PASSO 13
+vamos criar a camada service
+ele faz a ligação do dado que recebemos do controller com o repository
+crie uma pasta 'service' e uma java class 'StockService', nesse arquivo dê o nome do método de 'Service', é necessário criar os mocks
+no arquivo 'StockController' adicione um código que vai fazer a conexão com o service
+
+PASSO 14 
+o mapper faz a transformação de objetos, crie uma pasta 'mapper' e um java class 'StockMapper'
+
+PASSO 15
+hora de criar as exceções ou exceptions handlers, crie uma pasta 'exceptions' e uma java class 'BusinessException'
+
+PASSO 16
+criação da camada util, crie uma pasta 'util'
+
+PASSO 17 
+crie uma java class 'ExceptionsHandler', ela ver interferir quando algum problema acontecer
+
+PASSO 18
+crie um java class 'ExceptionResponse', que vai ser o objeto de resposta da mensagem
+
+PASSO 19
+crie um java class 'NotFoundException'
+
+PASSO 20
+criando uma descrição, no arquivo 'application.yml'
+no arquivo 'BootcampApplication' 

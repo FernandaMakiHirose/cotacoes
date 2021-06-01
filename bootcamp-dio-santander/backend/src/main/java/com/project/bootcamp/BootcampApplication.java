@@ -23,8 +23,9 @@ public class BootcampApplication {
 
     @Bean
 
-    /*são configurações da OpenAPI como um título, sua versão, termsofservice e a licença*/
+/*colocando a variável da descrição*/
     public OpenAPI customOpenAPI(@Value("${application.description}") String description) {
+        /*são configurações da OpenAPI como um título, sua versão, termsofservice e a licença*/
         return new OpenAPI()
                 .info(new Info()
                         .title(description)

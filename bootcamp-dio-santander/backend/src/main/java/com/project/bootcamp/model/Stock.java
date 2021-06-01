@@ -8,31 +8,28 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-/*
-PASSO 5 - definindo as ações no banco de dados
-*/
-
+/*PASSO 11 - mapeando as entidades*/
+/*definindo a entidade da tabela criada no banco de dados*/
 @Entity
 @Table(name = "tb_stock")
 public class Stock {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id") /*ação no banco de dados*/
-	private Long id; /*nome da ação*/
+	@GeneratedValue(strategy = GenerationType.AUTO) /*vai incrementar esses dados de maneira automática toda vez que fizer um insert*/
+	@Column(name = "id") /*dado do banco de dados*/
+	private Long id; /*atributo do backend*/
 
-	@Column(name = "name") /*ação no banco de dados*/
-	private String name; /*nome da ação*/
+	@Column(name = "name") 
+	private String name;
 
-	@Column(name = "price") /*ação no banco de dados*/
-	private Double price; /*nome da ação*/
+	@Column(name = "price") 
+	private Double price;
 
-	@Column(name = "variation") /*ação no banco de dados*/
-	private Double variation; /*nome da ação*/
+	@Column(name = "variation") 
+	private Double variation; 
 
-	@Column(name = "date") /*ação no banco de dados*/
-	private LocalDate date; /*nome da ação*/
+	@Column(name = "date") 
+	private LocalDate date; 
 
 	/*abaixo temos a criação dos getter e setter*/
 

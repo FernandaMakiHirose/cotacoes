@@ -15,6 +15,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Digits -> fraction: é o máximo de caractere depois da vírgula que pode ser recebido
 */
 
+/*passando dados do banco de dados e adicionando getter e setter*/
 public class StockDTO {
 
     private Long id;

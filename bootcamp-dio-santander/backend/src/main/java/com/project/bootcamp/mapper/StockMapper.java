@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 @Component
 public class StockMapper {
 
+    /*recebeu o DTO da requisição, transformou em entidade e retornou ela*/
     public Stock toEntity(StockDTO dto) {
         Stock stock = new Stock();
         stock.setId(dto.getId());
@@ -20,6 +21,7 @@ public class StockMapper {
         return stock;
     }
 
+    /*está convertendo entidade em DTO*/
     public StockDTO toDto(Stock active) {
         StockDTO stockDTO = new StockDTO();
         stockDTO.setId(active.getId());
@@ -30,6 +32,8 @@ public class StockMapper {
         return stockDTO;
     }
 
+    /*o DTO recebe uma lista de entidade que vai retornar uma lista de DTO, vai percorrer a lista de entidade item a item, vai mandar para o DTO já convertido e depois vai transformar em uma lista de retorno
+    */
     public List<StockDTO> toDto(List<Stock> list) {
         return list.stream().map(this::toDto).collect(Collectors.toList());
     }

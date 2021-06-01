@@ -22,6 +22,7 @@
 	</properties>
 	<dependencies>
 
+	<!-- PASSO 10 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -45,6 +46,7 @@
 			<version>1.2.32</version>
 		</dependency>
 
+		<!-- PASSO 10 -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
