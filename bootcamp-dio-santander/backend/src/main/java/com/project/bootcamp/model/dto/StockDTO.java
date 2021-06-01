@@ -8,6 +8,13 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+/* PASSO 9 - validação
+@NotNull: torna os campos obrigatórios, não precisou colocar no ID porque o banco de dados vai deixar ele nulo
+@DecimalMin: é o valor mínimo que pode ser recebido
+@Digits -> integer: é o máximo de caractere que pode ser recebido
+@Digits -> fraction: é o máximo de caractere depois da vírgula que pode ser recebido
+*/
+
 public class StockDTO {
 
     private Long id;

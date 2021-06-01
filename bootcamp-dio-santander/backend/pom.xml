@@ -11,7 +11,10 @@
 	</parent>
 	<groupId>com.project</groupId>
 	<artifactId>bootcamp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- PASSO 3-->
+	<version>1.0.0</version>
+
 	<name>bootcamp</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -29,11 +32,13 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- PASSO 9 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
+		<!-- PASSO 7 -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>

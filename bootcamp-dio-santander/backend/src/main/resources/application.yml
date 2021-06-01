@@ -1,7 +1,8 @@
+# PASSO 2 
 server:
-  port: 8080
+  port: 8080 # porta do localhost
   servlet:
-    context-path: /bootcamp
+    context-path: /bootcamp # path para rodar o sistema
 
 spring:
   datasource:

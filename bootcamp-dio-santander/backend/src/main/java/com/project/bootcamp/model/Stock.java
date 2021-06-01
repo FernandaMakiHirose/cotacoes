@@ -9,26 +9,32 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/*
+PASSO 5 - definindo as ações no banco de dados
+*/
+
 @Entity
 @Table(name = "tb_stock")
 public class Stock {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
-	private Long id;
+	@Column(name = "id") /*ação no banco de dados*/
+	private Long id; /*nome da ação*/
 
-	@Column(name = "name")
-	private String name;
+	@Column(name = "name") /*ação no banco de dados*/
+	private String name; /*nome da ação*/
 
-	@Column(name = "price")
-	private Double price;
+	@Column(name = "price") /*ação no banco de dados*/
+	private Double price; /*nome da ação*/
 
-	@Column(name = "variation")
-	private Double variation;
+	@Column(name = "variation") /*ação no banco de dados*/
+	private Double variation; /*nome da ação*/
 
-	@Column(name = "date")
-	private LocalDate date;
+	@Column(name = "date") /*ação no banco de dados*/
+	private LocalDate date; /*nome da ação*/
+
+	/*abaixo temos a criação dos getter e setter*/
 
 	public Long getId() {
 		return id;
