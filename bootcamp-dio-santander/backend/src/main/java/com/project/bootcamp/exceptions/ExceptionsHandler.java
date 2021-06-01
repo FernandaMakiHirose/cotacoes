@@ -10,6 +10,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class ExceptionsHandler extends ResponseEntityExceptionHandler {
 
+    /*vai retornar um 404 e vai receber um NotFoundException*/
     @ExceptionHandler(NotFoundException.class)
     protected ResponseEntity<ExceptionResponse> handleSecurity(NotFoundException ex) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ExceptionResponse(ex.getMessage()));
@@ -23,7 +24,7 @@ public class ExceptionsHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(new ExceptionResponse(ex.getMessage()));
     }
 
-    /*vai retornar um 404 e vai receber um NotFoundException*/
+    /*vai retornar um erro interno no servidor*/
     @ExceptionHandler(Exception.class)
     protected ResponseEntity<ExceptionResponse> handleSecurity(Exception ex) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new ExceptionResponse(ex.getMessage()));

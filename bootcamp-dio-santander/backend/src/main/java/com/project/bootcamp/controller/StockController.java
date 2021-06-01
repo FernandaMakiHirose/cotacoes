@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-/*importante para o fronend, é bom usar quando vai ligar com algo externo*/
+/*importante para o frontend, é bom usar quando vai ligar com algo externo*/
 @CrossOrigin
 
 /*segue as questões rest*/

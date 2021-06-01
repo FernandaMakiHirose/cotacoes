@@ -1,7 +1,8 @@
 package com.project.bootcamp.exceptions;
 
 import com.project.bootcamp.util.MessageUtils;
-/*criando um construtor recebendo a mensagem*/
+
+/*criando um construtor que recebe a mensagem*/
 
 public class NotFoundException extends RuntimeException{
 
