@@ -12,6 +12,7 @@ PASSO 2
 PASSO 3
 - entre na pasta do seu projeto e digite: npm start
 (vai rodar o projeto)
+<<<<<<< HEAD
 
 PASSO 4 
 - entender o que é um componente, os componentes ficam nos arquivos 'app.component.css', 'app.component.html' e 'app.component.ts' (define as ações)
@@ -60,6 +61,40 @@ digite no terminal: ng g service dashboard/dashboard
 como o service foi criado é necessário criar métodos para fazer chamadas na API e utilizar algumas dependências do angular no 'dashboard.service.ts')
 
 
+=======
+
+PASSO 4 
+- entender o que é um componente, os componentes ficam nos arquivos 'app.component.css', 'app.component.html' e 'app.component.ts' (define as ações)
+
+PASSO 5 
+- vamos criar um módulo, digite no terminal:
+ng generate module nomedomodulo
+(os módulos servem para do Angular servem para separar a aplicação por domínio e dar uma encapsulada dentro do módulo, então se criar um componente dentro do módulo ele só vai ser visível dentro desse módulo a não ser que ele seja exportado)
+
+PASSO 6 
+- vamos importar o módulo, toda vez que um módulo é criado precisamos importar ele no arquivo 'app.module.ts' no 'imports'
+
+PASSO 7
+- vamos criar um componente, digite no terminal:
+ng generate component pastaquevaigerarocomponent/nomedocomponente
+
+PASSO 8 
+- adicionando rotas, rotas são a url, vamos adicionar isso no 'app-routing.module.ts' e no arquivo 'app.component.html' adicionar <router-outlet></router-outlet> 
+
+PASSO 9
+- no arquivo 'index.html' é necessário adicionar esse valor (ele vai deixar tudo padronizado): 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> 
+
+PASSO 10
+- vamos criar um header, ele não vai ficar no módulo dashboard porque ele faz parte do contexto de layout, no terminal digite:
+ng g m nomedomodulo
+(criou um módulo), dentro desse módulo criado, criou um arquivo 'layout', é necessário criar componentes dentro dele, no terminal digite:
+ng g c nomedomodulo/layout/nomedocomponente
+
+PASSO 11
+- no 'shared.modules.ts' adicionou-se o 'exports' passando o nome do componente header criado 
+- no 'app.module.ts', no 'imports' adicionou o 'SharedModule' e no 'app.component.html' adiciomou <app-header></app-header>
+>>>>>>> ec8c90df595042eceed77f1f1221e81ef2369ea9
 
 
 ### Links com mais informações sobre CSS
