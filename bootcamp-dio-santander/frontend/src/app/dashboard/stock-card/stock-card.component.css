@@ -5,11 +5,11 @@
   padding: 1rem;
   margin: 1rem;
   border-radius: 4px;
-  border-left: solid var(--positive-variation-color) 0.25rem;
+  border-left: solid var(--positive-variation-color) 0.25rem; /*faz criar a borda verde*/
 
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column; /*deixa cada conteúdo um em cima do outro, existe 2 divs de conteúdo em cada stock*/
+  justify-content: space-between; /*deixa um espaço entre uma div e outra de um stock*/
 
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -23,51 +23,59 @@
   border-left-color: var(--negative-variation-color);
 }
 
+/*é a classe da primeira div do stock*/
 .stock-info-container {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /*deixar os textos um do lado do outro*/
+  flex-direction: row; /*deixar os textos um do lado do outro*/
+  justify-content: space-between; /*vai deixar um espaço entre os dois textos*/
+  align-items: center; /*vai alinhar os itens no centro*/
 }
 
+/*vai pegar a classe acima porém apenas as tags h2 e p*/
 .stock-info-container h2, p {
-  margin: 0;
+  margin: 0; /*definindo a margem*/
 }
 
+/*vai pegar a classe acima porém apenas a tag h2*/
 .stock-info-container h2 {
-  color: var(--text-color);
+  color: var(--text-color); /*vai adicionar uma cor*/
 }
 
+/*vai pegar a classe acima porém apenas a tag p*/
 .stock-info-container p {
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: var(--text-color-light);
+  font-weight: 500; /*peso da fonte*/
+  font-size: 0.875rem; /*tamanho da fonte*/
+  color: var(--text-color-light); /*cor da fonte*/
 }
 
+/*é o segundo div*/
 .stock-value-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+  flex-direction: column; /*um texto embaixo do outro*/
+  align-items: center; /*alinhando no centro*/
+  justify-content: center; /*alinhando no centro*/
+  margin: auto; /*colocando na vertical*/
 }
 
+/*selecionando o value dentro do div*/
 .stock-value-container .value {
-  font-size: 3rem;
-  color: var(--text-color);
+  font-size: 3rem; /*tamanho da fonte*/
+  color: var(--text-color); /*cor da fonte*/
 }
 
+/*selecionando o variation do div, é o valor positivo*/
 .stock-value-container .variation {
-  background-color: var(--positive-variation-color);
-  color: var(--secondary-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  align-self: flex-end;
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
+  background-color: var(--positive-variation-color); /*cor de fundo*/
+  color: var(--secondary-color); /*cor do texto*/
+  padding: 0.25rem 0.5rem; /*padding*/
+  border-radius: 4px; /*arredondamento da borda*/
+  align-self: flex-end; /*vai colocar pro lado direito*/
+  margin-top: 0.25rem; /*topo da margem*/
+  font-size: 0.875rem; /*tamanho da fonte*/
 }
 
+/*selecionando o negative-variation do div, é o valor negativo*/
 .stock-value-container .negative-variation {
-  background-color: var(--negative-variation-color);
+  background-color: var(--negative-variation-color); /*definindo a cor do plano de fundo*/
 }

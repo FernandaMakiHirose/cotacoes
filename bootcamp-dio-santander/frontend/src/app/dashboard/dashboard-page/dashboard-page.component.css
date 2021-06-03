@@ -1,8 +1,9 @@
+/*estamos configurando a div que envolve cada stock*/
 .container {
-  width: 100%;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%; /*definindo a altura*/
+  padding: 1.5rem; /*definindo o padding*/
+  display: flex; /*torna o container flexível*/
+  flex-direction: row; /*os itens são exibidos da esquerda para direita*/
+  flex-wrap: wrap; /*deixa os conteúdos responsivos e organizados*/
+  justify-content: center; /*alinha os conteúdos do flex no centro*/
 }
