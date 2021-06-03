@@ -11,6 +11,8 @@ import { registerLocaleData } from '@angular/common';
 
 import localePt from '@angular/common/locales/pt';
 
+
+/*vai receber o objeto locale do angular*/
 registerLocaleData(localePt);
 
 @NgModule({
@@ -23,6 +25,7 @@ registerLocaleData(localePt);
     DashboardModule,
     SharedModule
   ],
+  /*vai conseguir formatar os valores em pt-br*/
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR'}
   ],

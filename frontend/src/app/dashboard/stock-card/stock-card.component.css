@@ -11,10 +11,12 @@
   flex-direction: column; /*deixa cada conteúdo um em cima do outro, existe 2 divs de conteúdo em cada stock*/
   justify-content: space-between; /*deixa um espaço entre uma div e outra de um stock*/
 
+  /*adicionando uma sombra*/
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1); /*transição dessa sombra para a sombra abaixo para não ficar muito brusco*/
 }
 
+/*quando passar o mouse em cima a sombra vai ficar um pouco maior*/
 .stock-card-container:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);;
 }

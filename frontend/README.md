@@ -1,8 +1,13 @@
 PASSO 1 
 - vá no terminal do visual studio, mude o terminal para o 'git bash'
-- digite no terminal: ng new nomedoprojeto
+- digite no terminal: 
+npm install
+npm audit fix
+npm fund
+ng new nomedoprojeto
 - vai perguntar se você quer usar o 'angular routing', pode falar que sim apenas se seu projeto tiver mais de uma página
 - vai perguntar qual css você vai usar, clique em 'css'
+(para rodar o programa digite: npm start)
 
 PASSO 2
 - vá no arquivo 'package.json' e configure o 'start', ficou assim:

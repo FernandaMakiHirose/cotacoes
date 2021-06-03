@@ -20,8 +20,14 @@ export class StockCardComponent implements OnInit {
 
   //Método de manipulação de string
   get variation(): string{
+
+    /*transformando o número em string*/
     const localizedVariationString = this.stock.variation.toLocaleString();
+
+    /*se for maior que 0 vai ser + senão vai ser -*/
     const prefix = this.stock.variation > 0 ? '+' : '-';
+
+    /*vai retornar do - para sem nenhum sinal e adicionou o símbolo de porcentagem*/
     return `${prefix} ${localizedVariationString.replace('-', '')}%`;
   }
 
