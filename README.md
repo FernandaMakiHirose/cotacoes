@@ -7,6 +7,12 @@ Oi, eu sou a Fernanda! Estou aqui para contribuir com meu conhecimento e espero 
 
 
 ## <br />Descrição
-Desenvolvi uma tela de cotações do Santander usando Spring Boot (Spring Web) para criar uma API, integrando a mesma com um banco de dados relacional (Spring Data JPA) e por fim a criação do frontend e integração com a API.
+1. Instalação do Ambiente Java
+2. Criando o Projeto Base Java
+3. Criando sua Primeira API
+4. Aplicando Validações de Dados
+5. Configurando o Banco de Dados
+6. Criando a Camada Service e Exceptions Handlers
+7. Publicando nossa API na Nuvem
 
 
