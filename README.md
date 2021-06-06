@@ -1,4 +1,4 @@
-# Exercícios e Programas em HTML, CSS e Javascript
+# Tela de cotações do Santander
 
 ## Sobre a Autora
 Oi, eu sou a Fernanda! Estou aqui para contribuir com meu conhecimento e espero poder ajudar no desenvolvimento profissional de cada um de vocês.
