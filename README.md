@@ -8,7 +8,9 @@
 7. Publicando nossa API na Nuvem.
 
 ## Pré-requisitos
-IDE e Java instalados.
+- Java Development Kit - JDK 1.8 ou superior. <br>
+- Gradle. <br>
+- IntelliJ Idea IDE. <br>
 
 ## Sobre a Autora
 Oi, eu sou a Fernanda! Estou aqui para contribuir com meu conhecimento e espero poder ajudar no desenvolvimento profissional de cada um de vocês.
